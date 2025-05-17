@@ -5,3 +5,12 @@
 .ipynb_checkpoints/
 *.ipynb_checkpoints
 *.nbconvert.ipynb
+
+/trash_classifier_pre_processed/test_features.npy
+/trash_classifier_pre_processed/test_labels.npy
+
+/trash_classifier_pre_processed/train_labels.npy
+/trash_classifier_pre_processed/train_features.npy
+
+/trash_classifier_pre_processed/validation_features.npy
+/trash_classifier_pre_processed/validation_labels.npy
