@@ -48,14 +48,16 @@ Las clasificaciones del modelo son las siguientes:
 
 [2] T. Kaur and T. K. Gandhi, “Automated Brain Image Classification Based on VGG-16 and
  Transfer Learning,” 2019 International Conference on Information Technology (ICIT), 
- Dec. 2019, doi: https://doi.org/10.1109/icit48102.2019.00023.
+ Dec. 2019, doi: https://doi.org/10.1109/icit48102.2019.00023
+ (accessed May 15, 2025).
 
 [3] A. Demelash and E. Derb, “Habesha Cultural Cloth Classification Using Deep Learning,”
- Scientific Reports, vol. 15, no. 1, Apr. 2025, doi: https://doi.org/10.1038/s41598-025-98269-5.
+ Scientific Reports, vol. 15, no. 1, Apr. 2025, doi: https://doi.org/10.1038/s41598-025-98269-5,
+ (accessed May 15, 2025).
 
 [4] A. Patil, A. Tatke, N. Vachhani, M. Patil, and P. Gulhane, “Garbage Classifying Application 
 Using Deep Learning Techniques,” IEEE Xplore (Scopus), Aug. 01, 2021. https://ieeexplore.ieee.org/
-document/9573599 (accessed Oct. 20, 2022).
+document/9573599 (accessed May 15, 2025).
 
 ---
 
