@@ -25,16 +25,20 @@ Las clasificaciones del modelo son las siguientes:
 * Cartón
 
 ---
-### Metodología seguida
+#### Metodología
 1. Recolección de datos (dataset) en: [https://archive.ics.uci.edu/dataset/908/realwaste]
 2. Verificación y validación de (dataset) de manera local
 3. Recolección de datos (dataset) en: [https://www.kaggle.com/datasets/alistairking/recyclable-and-household-waste-classification?resource=download] y [https://www.kaggle.com/datasets/alexanderuzhinskiy/moss-species-classification-dataset]
-4. Merge y separación de datos en batch de manera local
-5. Pre-procesado de datos (Cropping siguiendo estándar de 256 x 256 pixeles)
-6. Partición de datos (Data splitting)
-7. Aumento de datos (Data Augmentation)
-8. Construcción y entrenamiento del modelo con arquitectura CNN
-9.  Muestra de gráficas (entrenamiento vs precisión de validación y entrenamiento vs pérdida de validación)
+4. Uso de scripts en shell para organización de imagenes por categorías ({clase}_{i}.jpg)
+5. Merge y separación de datos en batch de manera local
+6. Data splitting 70% training, 15% validation y 15% testing (se aplicó shuffle disminuyendo el bias por ciertas imágenes)
+7. Pre-procesado de datos (Siguiendo ideas de procesos de papers, ver sección abajo Ruido Gaussiano, Detección de border con Canny, étc)
+8. Data augmentation (balanceo de clases en disco)
+9. Data splitting, a nuevo directorio
+10. Feature engineering (feature extraction) con modelo pre-entrenado VGG16
+11. Construcción y entrenamiento del modelo con arquitectura CNN
+12. Muestra de gráficas (entrenamiento vs precisión de validación y entrenamiento vs pérdida de validación)
+13. Iteración del paso 11 en adelante
 
 ---
 ### Recursos utilizados
