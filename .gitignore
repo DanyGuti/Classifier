@@ -1,0 +1,7 @@
+# macOS system files
+.DS_Store
+
+# Jupyter Notebook checkpoints and metadata
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+*.nbconvert.ipynb
