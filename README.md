@@ -26,19 +26,20 @@ Las clasificaciones del modelo son las siguientes:
 
 ---
 #### Metodología
-1. Recolección de datos (dataset) en: [https://archive.ics.uci.edu/dataset/908/realwaste]
+1. Recolección de datos (dataset) en lugar de inicio o principal: [https://archive.ics.uci.edu/dataset/908/realwaste]
 2. Verificación y validación de (dataset) de manera local
-3. Recolección de datos (dataset) en: [https://www.kaggle.com/datasets/alistairking/recyclable-and-household-waste-classification?resource=download] y [https://www.kaggle.com/datasets/alexanderuzhinskiy/moss-species-classification-dataset]
+3. Recolección de datos (dataset) en: [https://www.kaggle.com/datasets/alistairking/recyclable-and-household-waste-classification?resource=download], [https://www.kaggle.com/datasets/alexanderuzhinskiy/moss-species-classification-dataset], algunas imágenes de [https://www.kaggle.com/datasets/aashidutt3/waste-segregation-image-dataset], algunas imágenes de [https://www.kaggle.com/datasets/ichhadhari/leaf-images], algunas imágenes de [https://www.kaggle.com/c/cassava-disease/overview], algunas imágenes de [https://www.kaggle.com/datasets/wasifmahmood01/custom-waste-classification-dataset]
 4. Uso de scripts en shell para organización de imagenes por categorías ({clase}_{i}.jpg)
 5. Merge y separación de datos en batch de manera local
 6. Data splitting 70% training, 15% validation y 15% testing (se aplicó shuffle disminuyendo el bias por ciertas imágenes)
 7. Pre-procesado de datos (Siguiendo ideas de procesos de papers, ver sección abajo Ruido Gaussiano, Detección de border con Canny, étc)
-8. Data augmentation (balanceo de clases en disco)
-9. Data splitting, a nuevo directorio
-10. Feature engineering (feature extraction) con modelo pre-entrenado VGG16
-11. Construcción y entrenamiento del modelo con arquitectura CNN
-12. Muestra de gráficas (entrenamiento vs precisión de validación y entrenamiento vs pérdida de validación)
-13. Iteración del paso 11 en adelante
+8. Data augmentation (no se aplicó ninguna estandarización VGG16 además de estandarizar las fotos a 224, 244). 
+9. Balanceo de clases en disco (no se aplicó ninguna estandarización VGG16 además de estandarizar las fotos a 224, 244), este paso involucró hacer dos iteraciones de los pasos 2-8, ya que lo mejor es que las clases estén balanceadas con el número de datos por categoría. En este caso, las clases más difíciles de encontrar datos fueron : Vegetación, textiles, basura miscelánea y comida orgánica (encontradas en los URLs de Kaggle). Se buscó que para datos de training, se mantuviera un número de 1,000 imágenes por clase, sino, se aplicaría el aumento de datos, normalizando los pixeles entre 0 y 1, rotando imágenes de manera random entre 0 y 20 grados, mover la imagen de manera horizontal y/o vertical en un 20% máximo, aplicando forma como de trapezoide a la imagen en máximo un 20%, aplicar zoom en máximo un 20%, y de manera aleatoria voltear una imagen de manera horizontal. Se hizo un calculo, para que se tomara las imagenes faltantes para llegar a 1000 para cada clase, divido por 5 y después se aplico un batch por imagen, en un rango de 5 como generador de imagenes a disco.
+10. Data splitting, a nuevos directorios con el ya balanceo de clases (aplicado el paso 10)
+11. Feature engineering (feature extraction) con modelo pre-entrenado VGG16
+12. Construcción y entrenamiento del modelo con arquitectura CNN
+13. Muestra de gráficas (entrenamiento vs precisión de validación y entrenamiento vs pérdida de validación)
+14. Iteración del paso 11 en adelante
 
 ---
 ### Recursos utilizados
