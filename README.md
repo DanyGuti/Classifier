@@ -60,6 +60,16 @@ Las clasificaciones del modelo son las siguientes:
 Using Deep Learning Techniques,” IEEE Xplore (Scopus), Aug. 01, 2021. https://ieeexplore.ieee.org/
 document/9573599 (accessed May 15, 2025).
 
+[5] A. Grzybowski, K. Pawlikowska – Łagód, and W. C. Lambert, “A History of Artificial Intelligence,” Clinics in Dermatology, vol. 42, no. 3, Jan. 2024, doi: https://doi.org/10.1016/j.clindermatol.2023.12.016.
+
+[6] “UCI Machine Learning Repository,” Uci.edu, 2023. https://archive.ics.uci.edu/dataset/908/realwaste (accessed May 22, 2025).
+
+[7] H. Wang, “Garbage Recognition and Classification System Based on Convolutional Neural Network VGG16,” 2020 3rd International Conference on Advanced Electronic Materials, Computers and Software Engineering (AEMCSE), Apr. 2020, doi: https://doi.org/10.1109/aemcse50948.2020.00061.
+
+[8] A. Hambal, Z. Pei, and F. Libent, “Image Noise Reduction and Filtering Techniques,” International Journal of Science and Research (IJSR) ISSN, vol. 6, no. 3, pp. 2319–7064, Mar. 2017, doi: https://doi.org/10.21275/25031706
+
+[9] S. Tammina, “Transfer learning using VGG-16 with Deep Convolutional Neural Network for Classifying Images,” International Journal of Scientific and Research Publications (IJSRP), vol. 9, no. 10, p. p9420, Oct. 2019, doi: https://doi.org/10.29322/ijsrp.9.10.2019.p9420
+
 ---
 
 ### Uso
